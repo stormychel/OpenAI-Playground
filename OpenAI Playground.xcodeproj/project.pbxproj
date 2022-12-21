@@ -16,6 +16,7 @@
 		ED9763C829534AB40078EB5E /* OpenAI_PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9763C729534AB40078EB5E /* OpenAI_PlaygroundTests.swift */; };
 		ED9763D229534AB40078EB5E /* OpenAI_PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9763D129534AB40078EB5E /* OpenAI_PlaygroundUITests.swift */; };
 		ED9763D429534AB40078EB5E /* OpenAI_PlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9763D329534AB40078EB5E /* OpenAI_PlaygroundUITestsLaunchTests.swift */; };
+		ED9763E2295351650078EB5E /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = ED9763E1295351650078EB5E /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9763E2295351650078EB5E /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = "OpenAI Playground";
+			packageProductDependencies = (
+				ED9763E1295351650078EB5E /* OpenAI */,
+			);
 			productName = "OpenAI Playground";
 			productReference = ED9763AD29534AB10078EB5E /* OpenAI Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = ED9763A429534AB10078EB5E;
+			packageReferences = (
+				ED9763E0295351650078EB5E /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = ED9763AE29534AB10078EB5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -620,6 +628,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED9763E0295351650078EB5E /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stormychel/OpenAI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED9763E1295351650078EB5E /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED9763E0295351650078EB5E /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ED9763B429534AB10078EB5E /* OpenAI_Playground.xcdatamodeld */ = {
